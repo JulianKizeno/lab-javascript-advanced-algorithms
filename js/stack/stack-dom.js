@@ -33,7 +33,7 @@ const stackList = document.getElementById('stack-list');
      let getLi = stackList.querySelectorAll('.inactive')
      getLi[0].classList.toggle('active')
      getLi[0].classList.toggle('inactive')
-     getLi[0].innerHTML = stackInput.value
+     getLi[0].textContent = stackInput.value
      clearStackInput()
      console.log(newStack.stackControl)
    } else {

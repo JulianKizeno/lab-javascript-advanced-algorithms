@@ -32,7 +32,7 @@ const addToQueue = () => {
     clearQueueInput()
     let getLi = queueUL.querySelectorAll('li')
     for (let i = 0; i < queue.queueControl.length; i++) {
-      getLi[i].innerHTML = queue.queueControl[i]
+      getLi[i].textContent = queue.queueControl[i]
       getLi[i].classList.remove('inactive')
       getLi[i].classList.add('active')
       console.log(newStack.queueControl)
